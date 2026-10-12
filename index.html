@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yağmur Yılmaz Kayacı - Profesyonel Özgeçmiş</title>
+    <style>
+        :root {
+            --bg-color: #0b1329;
+            --sidebar-bg: #1c2541;
+            --gold-color: #d4af37;
+            --text-light: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: rgba(212, 175, 55, 0.3);
+            --button-bordeaux: #800020;
+            --button-bordeaux-hover: #A52A2A;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #111a36;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        /* SOL SÜTUN (Sidebar) */
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            padding: 30px 20px;
+            border-right: 1px solid var(--border-color);
+        }
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--gold-color);
+            display: block;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .sidebar h3 {
+            color: var(--gold-color);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            border-bottom: 2px solid var(--gold-color);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .sidebar p, .sidebar li {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .sidebar a {
+            color: var(--text-light);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .sidebar a:hover {
+            color: var(--gold-color);
+            text-decoration: underline;
+        }
+
+        /* SAĞ SÜTUN (Main Content) */
+        .main-content {
+            padding: 35px 30px;
+        }
+        h1 {
+            color: var(--gold-color);
+            font-size: 2rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        h2 {
+            color: var(--gold-color);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--gold-color);
+            padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .experience-item, .cert-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h4 {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 3px;
+        }
+        .experience-item .date {
+            font-size: 0.85rem;
+            color: var(--gold-color);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .experience-item p, .main-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 6px;
+        }
+        .experience-item a {
+            color: #60a5fa;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+            word-break: break-all;
+            margin-bottom: 4px;
+        }
+        .experience-item a:hover {
+            text-decoration: underline;
+        }
+        .btn-port {
+            display: inline-block;
+            background-color: var(--button-bordeaux);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(128, 0, 32, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
+        }
+        .btn-port:hover {
+            background-color: var(--button-bordeaux-hover);
+        }
+
+        /* Responsive Uyum */
+        @media (max-width: 850px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- SOL SÜTUN -->
+        <div class="sidebar">
+            <img src="yagmur.png" alt="Yağmur Yılmaz Kayacı" class="profile-pic">
+            
+            <h3>İletişim</h3>
+            <p>📞 505 422 24 05</p>
+            <p>📧 <a href="mailto:yagmuryilmazzz06@gmail.com">yagmuryilmazzz06@gmail.com</a></p>
+            <p>📍 Umut mah. Yavuzevler sk. 55/3 Çankaya / Ankara</p>
+            <p>💼 <a href="https://www.linkedin.com/in/yagmur-y%C4%B1lmaz-61b7a6248/?isSelfProfile=true" target="_blank">LinkedIn Profilim</a></p>
+
+            <h3>Eğitim</h3>
+            <p><strong>Dumlupınar Üniversitesi</strong><br>İş Sağlığı ve Güvenliği Tezsiz Yüksek Lisans</p>
+            <p style="margin-top:10px;"><strong>Anadolu Üniversitesi</strong><br>Kamu Yönetimi - Lisans</p>
+            <p style="margin-top:10px;"><strong>Anadolu Üniversitesi</strong><br>Radyo TV Prg. - Ön Lisans</p>
+            <p style="margin-top:10px;"><strong>Anadolu Üniversitesi</strong><br>İş Sağlığı ve Güvenliği - Ön Lisans</p>
+
+            <h3>Bilgisayar</h3>
+            <p>Excel, A. Illustrator, A. InDesign, Word</p>
+
+            <h3>Dil</h3>
+            <p>Türk İşaret Dili - İleri Seviye / Eğitmen</p>
+            <p>İngilizce - Başlangıç Seviye</p>
+
+            <h3>İlgi Alanları</h3>
+            <p>Manzara ve ürün telefon fotoğrafçısıdır. Droneları sever. Pilates yapar. Botanik ve fitoterapiyle ilgilenir. Sanat ve sanata dair ne varsa sever. Profesyonel film seyircisi ve eleştirmendir. Gönüllü ve sosyal sorumluluk projelerini sever (eğitimli afet gönüllüsüdür). Doğuştan İş Güvenliği Uzmanıdır. Türk İşaret Diliyle şarkı söyler. Araştırma ve geliştirme (mucitlik) yapar. Kitap yazarıdır (hala yazıyor ve editörlüğünü de yapıyor). Eğitim videoları çeker. Kişisel gelişime önem verir. Haftasonu dinlenmek ister. Seyahat sever ve nadiren araba sürer.</p>
+        </div>
+
+        <!-- SAĞ SÜTUN -->
+        <div class="main-content">
+            <h1>YAĞMUR YILMAZ KAYACI</h1>
+            <div class="subtitle">C Sınıfı İş Güvenliği Uzmanı | TİD Eğitmeni & Tercümanı | Sunucu & Yazar</div>
+            
+            <a href="https://yayiltv.github.io/web/" target="_blank" class="btn-port">🌐 Ana Portföy & Ürünler Sitemi İncele</a>
+
+            <h2>İş Deneyimleri</h2>
+
+            <div class="experience-item">
+                <h4>C Sınıfı İş Güvenliği Uzmanı</h4>
+                <div class="date">2026</div>
+            </div>
+
+            <div class="experience-item">
+                <h4>Bereket TV - 'Brusella kaderiniz olmasın' Kamu Spotu - Sunucu</h4>
+                <div class="date">07.2019</div>
+                <a href="https://www.youtube.com/watch?v=fivdtTUY5EO" target="_blank">https://www.youtube.com/watch?v=fivdtTUY5EO</a>
+            </div>
+
+            <div class="experience-item">
+                <h4>Bereket TV - Traktör Arena Düello 3.Sezon Yarışma Programı Sunucusu</h4>
+                <div class="date">04.2018</div>
+                <p>Yarışma prime time'da yayınlanmış final sunumu canlı yayınla da gerçekleşmiştir:</p>
+                <a href="https://www.youtube.com/watch?v=iAW1flcqm-h4&t=27s" target="_blank">Video 1 Linki</a><br>
+                <a href="https://www.youtube.com/watch?v=j25c91AJPXg" target="_blank">Video 2 Linki</a><br>
+                <a href="https://www.youtube.com/watch?v=OOEYaAp-KRIg&t=48s" target="_blank">Video 3 Linki</a><br>
+                <a href="https://www.youtube.com/watch?v=mUi-ka80Ljec&t=41s" target="_blank">Video 4 Linki</a><br>
+                <a href="https://www.youtube.com/watch?v=c278K" target="_blank">Video 5 Linki</a>
+            </div>
+
+            <div class="experience-item">
+                <h4>Global Kariyer Akademi - FNSS Savunma Sistemleri A.Ş. / Koru Hastanesi</h4>
+                <div class="date">09.2017</div>
+                <p>Türk İşaret Dili Eğitmeni (Personel kurum eğitimi)</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>Sun Akademi - Özel Sunum Yabancı Dil Eğitim Kurumu - TAI TUSAŞ</h4>
+                <div class="date">05.2017 - 2018</div>
+                <p>Türk Havacılık ve Uzay Sanayi A.Ş. / Türk İşaret Dili Eğitmeni (50 kişilik personele Türk İşaret Dili eğitimi)</p>
+            </div>
+
+            <div class="experience-item">
+                <h4>TRT Kamu Spotu - EGM</h4>
+                <div class="date">08.2016</div>
+                <p>'Emniyet Kemer Hayat Kurtarır' Kamu Spotu - Türk İşaret Dili Tercümanı</p>
+                <a href="https://www.ntv.com.tr/video/turkiye/emniyet-kemer-kullanimina-kenan-sofuoglu-ile-dikkat-cekecek,5wercg916UqQiZyq-4H6sQ" target="_blank">NTV Haberi</a><br>
+                <a href="https://www.youtube.com/watch?v=d2rBXhMW2FA" target="_blank">YouTube Linki</a>
+            </div>
+
+            <div class="experience-item">
+                <h4>20. ve 21. Dönem Uluslararası Adana Altın Koza Film Festivali</h4>
+                <div class="date">10.2013</div>
+                <p>Sinema Ekibi - Basın Masası Sorumlusu (İki dönem üst üste katılmıştır)</p>
+            </div>
+
+            <h2>Sertifika ve Yetkinlikler</h2>
+            <div class="experience-item">
+                <p>• <strong>İSG Kursu - Seka Akademi:</strong> 220 saat - İSG Temel Eğitimini Başarılı Tamamlamış, 05.2026 - İSG Sınavını Kazanarak, ÇSGB Onaylı C Sınıfı İGU Olmuştur.</p>
+                <p>• <strong>Afet Farkındalık ve Temel İlk Yardım Eğitimi - Afet Gönüllüsü:</strong> 02.2022-06.2022 - T.C. ABB</p>
+                <p>• <strong>İHA1 Sportif Amatör Pilot Lisansı:</strong> 02.2022 Sivil Havacılık Genel Müdürlüğü (4-24kg aralığı)</p>
+                <p>• <strong>Ankara Tasarım MEB - Güzel Sanatlar Bilgisayarlı Grafik Kursu:</strong> 10.2022 - 416 saat</p>
+                <p>• <strong>MEB - İşaret Dili Eğitici ve Tercüman Eğitimi:</strong> 08.2015 - 200 saat</p>
+                <p>• <strong>MEB - İşaret Dili Eğitimi:</strong> 03.2014 - 120 saat</p>
+                <p>• <strong>Türkiye Jimnastik Federasyonu - Antrenör Eğitim Programı:</strong> 07.2013 - 94 saat Pilates Eğitmeni</p>
+            </div>
+
+            <h2>Referanslar</h2>
+            <div class="experience-item">
+                <p><strong>Osman KULOĞLU</strong> - AGRO TV ve Radyo Yayıncılık A.Ş Genel Yayın Yönetmeni | 0533 668 87 44</p>
+                <p><strong>Mehmet SARICA</strong> - İNİSİYATİF FİLM YAP. REKLAM Org. L.t.d şt.i Genel Müdür | 0532 560 04 00</p>
+                <p><strong>Battal KILIÇASLAN</strong> - GLOBAL KARİYER AKADEMİ tic. L.t.d. Kurum Müdürü | 0554 938 71 08</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
