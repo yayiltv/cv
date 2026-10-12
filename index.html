@@ -147,6 +147,13 @@
         .experience-item a:hover {
             text-decoration: underline;
         }
+        /* Referanslar için özel küçük ve tek satır stili */
+        .reference-text {
+            font-size: 0.78rem !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
         /* Responsive Uyum */
         @media (max-width: 850px) {
@@ -156,6 +163,9 @@
             .sidebar {
                 border-right: none;
                 border-bottom: 1px solid var(--border-color);
+            }
+            .reference-text {
+                white-space: normal;
             }
         }
     </style>
@@ -187,7 +197,7 @@
             <p>İngilizce - Başlangıç Seviye</p>
 
             <h3>İlgi Alanları</h3>
-            <p>Manzara ve ürün telefon fotoğrafçısıdır. Droneları sever. Pilates yapar. Botanik ve fitoterapiyle ilgilenir. Sanat ve sanata dair ne varsa sever. Profesyonel film seyircisi ve eleştirmendir. Gönüllü ve sosyal sorumluluk projelerini sever (eğitimli afet gönüllüsüdür). Doğuştan İş Güvenliği Uzmanıdır. Türk İşaret Diliyle şarkı söyler. Araştırma ve geliştirme (mucitlik) yapar. Kitap yazarıdır (hala yazıyor ve editörlüğünü de yapıyor). Eğitim videoları çeker. Kişisel gelişime önem verir. Haftasonu dinlenmek ister. Seyahat sever ve nadiren araba sürer.</p>
+            <p>Manzara dan ürün telefon fotoğrafçısıdır. Droneları sever. Pilates yapar. Botanik ve fitoterapiyle ilgilenir. Sanat ve sanata dair ne varsa sever. Profesyonel film seyircisi ve eleştirmendir. Gönüllü ve sosyal sorumluluk projelerini sever (eğitimli afet gönüllüsüdür). Doğuştan İş Güvenliği Uzmanıdır. Türk İşaret Diliyle şarkı söyler. Araştırma ve geliştirme yapar. Kitap yazarıdır ("Türklerin İşaret Tarihi 1" isimli eseri Kitapyurdu'nda yayımlanmıştır). Eğitim videoları çeker. Udemy isimli sitede yayında olan TİD eğitimleri bulunmaktadır. Mobil uygulama geliştiricisidir. "TİD Sözlük" isimli interaktif sözlük uygulamasının sahibidir. Kişisel gelişime önem verir. Engellilik, farkındalık ve akran zorbalığı konularında yazılmış, 6 adet dijital çocuk masal kitabı bulunmaktadır. Haftasonu dinlenmek ister. Seyahat sever ve nadiren araba sürer.</p>
         </div>
 
         <!-- SAĞ SÜTUN -->
@@ -253,9 +263,9 @@
 
             <h2>👥 Referanslar</h2>
             <div class="experience-item">
-                <p><strong>Osman KULOĞLU</strong> - AGRO TV ve Radyo Yayıncılık A.Ş Genel Yayın Yönetmeni | 0533 668 87 44</p>
-                <p><strong>Mehmet SARICA</strong> - İNİSİYATİF FİLM YAP. REKLAM Org. L.t.d şt.i Genel Müdür | 0532 560 04 00</p>
-                <p><strong>Battal KILIÇASLAN</strong> - GLOBAL KARİYER AKADEMİ tic. L.t.d. Kurum Müdürü | 0554 938 71 08</p>
+                <p class="reference-text"><strong>Osman KULOĞLU</strong> - AGRO TV ve Radyo Yayıncılık A.Ş Genel Yayın Yönetmeni | 0533 668 87 44</p>
+                <p class="reference-text"><strong>Mehmet SARICA</strong> - İNİSİYATİF FİLM YAP. REKLAM Org. L.t.d şt.i Genel Müdür | 0532 560 04 00</p>
+                <p class="reference-text"><strong>Battal KILIÇASLAN</strong> - GLOBAL KARİYER AKADEMİ tic. L.t.d. Kurum Müdürü | 0554 938 71 08</p>
             </div>
         </div>
     </div>
